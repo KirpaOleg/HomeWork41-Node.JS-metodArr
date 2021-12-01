@@ -54,3 +54,8 @@ console.log('H >>>', resultH);
 
 // Создать функцию, которая преобразовывает значения, записанные через дефис в значения, 
 // записанные в camelCase, например, "border-radius" в "borderRadius"
+const hyphen = 'border-radius';
+const splitStr = hyphen.split('-');
+const big = splitStr[1].toString().charAt(0).toUpperCase() + splitStr[1].slice(1);
+const newStr = splitStr[0] + big;
+console.log('camelCase >>>', newStr);
