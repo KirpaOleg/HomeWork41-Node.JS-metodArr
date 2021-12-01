@@ -59,3 +59,7 @@ const splitStr = hyphen.split('-');
 const big = splitStr[1].toString().charAt(0).toUpperCase() + splitStr[1].slice(1);
 const newStr = splitStr[0] + big;
 console.log('camelCase >>>', newStr);
+
+
+const camelCaseOll = hyphen.replace(/-([a-z])/g, (word, index) => index.toUpperCase());
+console.log('camelCase >>>', camelCaseOll);
